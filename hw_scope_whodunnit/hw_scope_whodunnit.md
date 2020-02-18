@@ -27,7 +27,7 @@ Using your knowledge about scope and variable declarations in JavaScript, look a
 // const verdict = declareMurderer();
 // console.log(verdict);
 
- // ## this returns the murderer Miss Scarlett as it is accessing the object table named scenario and then the key /property murderer and returning that verdict
+ // ## this returns the murderer Miss Scarlett as it is accessing the object table named scenario and then the key /property murderer and returning that verdict from the scenario object.
 
 // #### Episode 2
 //
@@ -46,8 +46,7 @@ Using your knowledge about scope and variable declarations in JavaScript, look a
 // const verdict = declareMurderer();
 // console.log(verdict);
 //
-// The change Murderer function changes the name from Prof Plum to Mrs Peacock and then by declaring the murderer the new key of Mrs Peacock is returned. It is not possible to change the blocked-scope of the const itself but the elements inside can be changed
-
+// I dont think this will work although I am not sure why. It looks the same as the code above but.
 
 // #### Episode 3
 //
@@ -65,7 +64,7 @@ Using your knowledge about scope and variable declarations in JavaScript, look a
 // const secondVerdict = `The murderer is ${murderer}.`;
 // console.log('Second Verdict: ', secondVerdict);
 // ```
-// This code shows constants which cannot be changed but the variables within the constants can be changed. It will return two verdicts first showing Prof Plum, then secondly, Mrs Peacock as both are being called
+// This code shows constants which cannot be changed but the variables within the constants can be changed. It will return two verdicts first showing Mrs Peacock, then secondly, Prof Plum,Mrs Peacock as both are being called but Peacock is within its own bubble and Plum is within the whole bubble so the second const can only see it.
 
 // //
 // #### Episode 4
@@ -137,6 +136,8 @@ Using your knowledge about scope and variable declarations in JavaScript, look a
 // console.log(verdict);
 // // ```
 // This returns the murderer as Mrs White as the function changes from Col Mustard to Mr Green (changeMurderer), then changes one more time in a plot twist (but calls murderer) to Mrs White cancelling out the prior.
+
+// Murderer is a variable (Col Mustard)
 
 
 // #### Episode 7
